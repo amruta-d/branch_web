@@ -12,14 +12,17 @@
       branch.deepview(
         {
           campaign: 'testFb',
+          channel: 'landing_page',
+          feature: 'launcher',
           data: {
-            mydata: 'content of my data',
-            foo: 'bar',
-            '$deeplink_path': 'item_id=12345'
+            custom: 'data',
+            '$desktop_url': 'https://x.com',
+            '$fire_url': 'https://x.com',
+            '$blackberry_url': 'https://x.com',
+            '$windows_phone_url': 'https://x.com'
           },
         },
         {
-          make_new_link: true,
           open_app: false
         },
         function(err) {
